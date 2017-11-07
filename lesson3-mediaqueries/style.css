@@ -1,0 +1,76 @@
+html {
+    font-size:16px;
+}
+
+body{
+    color:#352a25;
+    font-family:Georgia, serif;
+    font-size:62.5% /*1em=10px*/;
+    /*background: url("backgroung.jpg") no-repeat;*/
+    background-size: cover;
+    margin:30px;
+}
+
+h1{
+    font-size:3em; /* 30px is what we need. But the body font size is 10px so the ems would be 30/10 */
+    font-weight:bold;
+}
+h1 a{
+    font-size:0.46em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #6C564B;
+}
+
+.container{
+    width:100%;
+}
+.logo{
+    min-height:50px;
+    width:33%;
+    float:left;
+    background-image: url("logo.png");
+    background-repeat:no-repeat;
+}
+.nav{
+    width:66%;
+    float: right;
+    font-size: 2.6em;
+    display:inline-block;
+    text-align: right;
+    font-family: Arial;
+}
+.nav-item{
+    display:inline-block;
+}
+.nav-item a{
+    text-decoration:none;
+    color:pink;
+    margin-left:0.625em;
+}
+.content{
+    width:100%;
+    text-align:center;
+    font-size:2em;
+    clear: both;
+    margin:20px;
+    text-align:left;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1010px){
+    .logo{
+        float:none;
+        width:100%;
+        margin-left:33%;
+    }
+    .nav{
+        float:none;
+        width:100%;
+        font-size:2em;
+        text-align: center;
+    }
+    .content{
+        font-size:1.6em;
+    }
+}
